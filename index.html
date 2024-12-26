@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--create acc form-->
+    <div>
+       <input type="text" id="accountHolderName" placeholder="Enter account holder name" />
+    <input type="text" id="initialBalance" placeholder="Enter initial balance" />
+    <button id="createAccountBtn">Create Account</button>
+    </div>
+     <!-- Select Active Account -->
+    <div>
+      <label for="selectAccount">Select Account:</label>
+      <select id="selectAccount">
+        <option value="">-- Select Account --</option>
+      </select>
+    </div>
+    <!--bank acc functions-->
+    <input type="text" id="input" placeholder="Please enter amount" />
+    <div>
+      <input type="radio" id="deposit" name="action" value="deposit" checked />
+      <label for="deposit">Deposit</label>
+      
+      <input type="radio" id="withdraw" name="action" value="withdraw" />
+      <label for="withdraw">Withdraw</label>
+      
+      <input type="radio" id="checkBalance" name="action" value="checkBalance" />
+      <label for="checkBalance">Check Balance</label>
+    </div>
+    <button id="btn">Send</button>
+    <p id="result"></p>
+     <script src="script.js"></script>
+  </body>
+</html>
